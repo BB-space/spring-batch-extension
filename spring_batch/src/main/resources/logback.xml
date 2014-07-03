@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE logback>
+<configuration>
+	<appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>%d %5p %50.50c{50}:%4L - %m%n</Pattern>
+        </layout>
+	</appender>
+	
+	<logger name="com.cowboy76" level="info" />
+	
+	<logger name="org.springframework" level="warn"/>
+	    
+    <logger name="org.hibernate" level="warn"/>
+    
+    <logger name="org.mybatis" level="warn"/>
+      
+    <logger name="jdbc" level="warn"/>
+        
+    <logger name="net.sf.log4jdbc" level="warn"/>
+        
+    <logger name="jdbc.sqlonly" level="warn"/>
+    
+    <logger name="jdbc.resultsettable" level="warn"/>
+    
+	<root level="info">
+        <appender-ref ref="Console" />
+	</root>
+	
+</configuration>
