@@ -1,9 +1,8 @@
 #  Spring Batch Extension Examples
 
 Collection of Spring Batch Examples, covering the basics
-readers, processor, writers, and complex usecases.(cf : multi resource Job)
-
-
+readers, processor, writers, and complex usecases.
+(ex : multi resource Job)
 
 ## OpenSource Requirement
 * Spring Batch 
@@ -15,8 +14,6 @@ Consider following batch jobs :
 
 로컬개발환경 
 ```
-Step  : “READ-PROCESS-WRITE”
-
 * A : Read XML files from folder  
 * B : process it   
 * C : Write into Database
